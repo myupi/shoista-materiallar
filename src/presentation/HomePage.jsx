@@ -1,4 +1,4 @@
-import { BookOpen, Boxes, CalendarDays, ClipboardList } from 'lucide-react'
+import { BookOpen, CalendarDays, ClipboardList, Gamepad2 } from 'lucide-react'
 import { FeatureCard } from './components/FeatureCard'
 import { routes } from './routes'
 
@@ -46,10 +46,11 @@ export function HomePage() {
           description="Firebase’dagi barcha dars mavzulari va yangi mavzu qo‘shish formasi."
         />
         <FeatureCard
-          disabled
-          icon={Boxes}
-          title="Keyingi bo‘lim"
-          description="Bu joy keyingi bo‘lim uchun tayyor turadi."
+          href="https://sprightly-sunflower-6d1bed.netlify.app/"
+          icon={Gamepad2}
+          openInNewTab
+          title="O'yin"
+          description="Kartochkalar o'yini."
         />
         <FeatureCard
           disabled

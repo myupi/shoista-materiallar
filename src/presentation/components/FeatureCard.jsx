@@ -6,6 +6,7 @@ export function FeatureCard({
   disabled = false,
   href,
   icon: Icon,
+  openInNewTab = false,
   title,
 }) {
   function handleClick(event) {
@@ -44,7 +45,13 @@ export function FeatureCard({
   }
 
   return (
-    <a className="feature-card" href={href} onClick={handleClick}>
+    <a
+      className="feature-card"
+      href={href}
+      onClick={handleClick}
+      target={openInNewTab ? '_blank' : undefined}
+      rel={openInNewTab ? 'noreferrer' : undefined}
+    >
       {content}
     </a>
   )
